@@ -1,11 +1,11 @@
-import { Component, ViewEncapsulation} from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app',
+    encapsulation: ViewEncapsulation.None,
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.less']
+    styleUrls: ['./common/styles/reset.css',
+        './app.component.less']
 })
 
-export class AppComponent {
-    title = 'Angular is easy'
-}
+export class AppComponent {}

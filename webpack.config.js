@@ -17,7 +17,7 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         publicPath: "/",
         sourceMapFilename: "[file].map",
-        filename: "[name].js"
+        filename: "[name].[hash].js"
     },
 
     module: {
@@ -107,6 +107,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: 'index.html'
+        }),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery'
         })
 
     ],
