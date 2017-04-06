@@ -1,14 +1,26 @@
-
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule } from '@angular/router';
+
 import { AppComponent } from '../components/app.component';
 import { SiteModule } from './site/site.module';
 import { CabinetModule } from './cabinet/cabinet.module';
 
-
+export const routeConfig = [
+    {
+        path: 'site',
+        loadChildren: './site/site.module',
+    },
+    {
+        path: 'cabinet',
+        loadChildren: './cabinet/cabinet.module'
+    },
+];
 @NgModule({
     imports: [
         BrowserModule,
+        RouterModule,
+        RouterModule.forRoot(routeConfig),
         SiteModule,
         CabinetModule
     ],
@@ -17,5 +29,7 @@ import { CabinetModule } from './cabinet/cabinet.module';
     ],
     bootstrap: [AppComponent]
 })
+
+
 
 export class AppModule { }

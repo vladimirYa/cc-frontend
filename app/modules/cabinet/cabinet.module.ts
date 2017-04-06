@@ -5,9 +5,11 @@ import { CabinetMenuComponent } from '../../components/cabinet/cabinet-menu/cabi
 import { CabinetContentComponent } from '../../components/cabinet/cabinet-content/cabinet-content.component';
 import { CabinetHeaderComponent } from '../../components/cabinet/cabinet-header/cabinet-header.component';
 import { CabinetFooterComponent } from '../../components/cabinet/cabinet-footer/cabinet-footer.component';
+import { RouterModule } from '@angular/router';
+import { routerConfig } from './shared/routes';
 
 @NgModule({
-    imports: [ CommonModule ],
+    imports: [ CommonModule, RouterModule.forChild(routerConfig) ],
     declarations: [
         CabinetComponent,
         CabinetMenuComponent,

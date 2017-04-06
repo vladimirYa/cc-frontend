@@ -17,13 +17,14 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         publicPath: "/",
         sourceMapFilename: "[file].map",
-        filename: "[name].[hash].js"
+        filename: "[name].[hash].js",
+        chunkFilename: 'public/[id].chunk.js',
     },
 
     module: {
         rules: [{
                 test: /\.tsx?$/,
-                use: ['awesome-typescript', 'angular2-template'],
+                use: ['awesome-typescript', 'angular-router', 'angular2-template'],
                 exclude: /node_modules/
             },
             {

@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./cabinet-content.component.less']
 })
 
-export class CabinetContentComponent {}
+export class CabinetContentComponent {
+    title = 'this is cabinet'
+}

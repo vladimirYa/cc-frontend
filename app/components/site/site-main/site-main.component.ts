@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class SiteMainComponent {
-    title = 'Hey bitch'
+    title = 'This is site-main'
 }
