@@ -7,13 +7,16 @@ import { SiteModule } from './site/site.module';
 import { CabinetModule } from './cabinet/cabinet.module';
 
 export const routeConfig = [
+     {
+         path: '', redirectTo: '/', pathMatch: 'full'
+     },
     {
         path: 'site',
-        loadChildren: './site/site.module',
+        loadChildren: './site/site.module#SiteModule',
     },
     {
         path: 'cabinet',
-        loadChildren: './cabinet/cabinet.module'
+        loadChildren: './cabinet/cabinet.module#CabinetModule'
     },
 ];
 @NgModule({

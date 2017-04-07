@@ -24,7 +24,7 @@ module.exports = {
     module: {
         rules: [{
                 test: /\.tsx?$/,
-                use: ['awesome-typescript', 'angular-router', 'angular2-template'],
+                use: ['awesome-typescript', 'angular2-template', 'angular-router'],
                 exclude: /node_modules/
             },
             {
