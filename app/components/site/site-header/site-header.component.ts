@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { siteLinks } from './shared/data';
 
 @Component({
     selector: 'site-header',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class SiteHeaderComponent {
+    siteLinks = siteLinks;
 }

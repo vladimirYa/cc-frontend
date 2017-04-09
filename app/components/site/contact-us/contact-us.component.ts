@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class ContactUsComponent {
-    title = 'ContactUsComponent'
+    title = 'This Contact us'
 }
