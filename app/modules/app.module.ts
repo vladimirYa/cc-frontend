@@ -3,21 +3,18 @@ import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from '../components/app.component';
-// import { SiteModule } from './site/site.module';
-// import { CabinetModule } from './cabinet/cabinet.module';
 
 export const routeConfig = [
      { path:'', pathMatch: 'full', redirectTo: 'site'},
      { path: 'site', loadChildren: './site/site.module#SiteModule' },
-     { path: 'cabinet', loadChildren: './cabinet/cabinet.module#CabinetModule' }
+     { path: 'business', loadChildren: './business/business.module#BusinessModule' },
+     { path: 'individual', loadChildren: './individual/individual.module#IndividualModule' }
 ];
 @NgModule({
     imports: [
         BrowserModule,
         RouterModule,
-        RouterModule.forRoot(routeConfig),
-        // SiteModule,
-        // CabinetModule
+        RouterModule.forRoot(routeConfig)
     ],
     declarations: [
         AppComponent
