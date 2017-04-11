@@ -1,0 +1,38 @@
+@import (less) '../mixins/flex-mixins';
+
+
+:host{
+    position: fixed;
+    width: 12%;
+    min-width: 230px;
+    overflow: auto;
+    height: 100%;
+    background-color: #4c5e70;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    .flex-column-flex-start-stretch();
+    text-align: center;
+}
+
+.cabinet-menu{
+    &__nav{
+        margin-top: 70px;
+        &-item{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            padding: 10px;
+            .flex-column-center();
+            box-shadow: inset 0 -1px 0 0 rgba(53, 69, 85, 0.87);
+            transition: 0.3s;
+            &:hover{
+                box-shadow: inset 0 -100px 0 0 rgba(53, 69, 85, 0.87);
+            }
+            & img{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

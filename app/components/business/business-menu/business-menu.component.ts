@@ -5,7 +5,7 @@ declare var require: any;
 @Component({
     selector: 'business-menu',
     templateUrl: './business-menu.component.html',
-    styleUrls: ['./business-menu.component.less']
+    styleUrls: ['./business-menu.component.less', '../../common/styles/cabinet-menu.less']
 })
 
 export class BusinessMenuComponent {

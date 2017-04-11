@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'business-header',
     templateUrl: './business-header.component.html',
-    styleUrls: ['./business-header.component.less']
+    styleUrls: ['./business-header.component.less','../../common/styles/cabinet-header.less']
 })
 
-export class BusinessHeaderComponent {
-    title = 'Business header'
-}
+export class BusinessHeaderComponent {}

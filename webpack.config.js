@@ -34,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                use: ['to-string', 'css', 'less'],
+                use: ['to-string', 'css', 'autoprefixer', 'less'],
                 exclude: /node_modules/
             },
             {

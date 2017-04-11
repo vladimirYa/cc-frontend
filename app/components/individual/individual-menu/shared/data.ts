@@ -1,6 +1,6 @@
 import { IMenuItem } from '../../../shared/menu-items.interface';
 
-export let businessMenuLinks: IMenuItem[] = [
+export let individualMenuLinks: IMenuItem[] = [
     {
         text: 'Dashboard',
         routerLink: 'dashboard',
