@@ -1,0 +1,9 @@
+<div class='business-menu__logo'>
+    <img src="../../common/images/ChargaCard-logo.png" alt="">
+</div>
+<nav>
+    <a *ngFor="let menuItem of menuItems" [routerLink]=menuItem.url class='business-menu__nav-item'>
+        <img [src]="loadImg(menuItem.imageName)" alt="">
+        {{menuItem.text}}
+    </a>
+</nav>

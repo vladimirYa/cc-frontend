@@ -39,7 +39,7 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: 'html',
+                loader: "html",
                 exclude: /node_modules/,
                 options: {
                     minimize: true,
