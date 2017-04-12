@@ -1,4 +1,5 @@
 @import (less) '../mixins/mixins';
+@import (less) '../mixins/flex-mixins';
 
 :host{
     position: fixed;
@@ -9,6 +10,7 @@
     background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(53, 69, 85, 0.3);
     z-index: 2;
+    .flex-row-space-between-center();
 }
 .cabinet-header{
     &__logo{
@@ -20,5 +22,9 @@
         & img{
             .transform-center();
         }
+    }
+    &__actions{
+        margin-right: 30px;
+        cursor: pointer;
     }
 }

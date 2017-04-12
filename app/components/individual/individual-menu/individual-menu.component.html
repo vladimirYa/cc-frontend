@@ -1,5 +1,9 @@
 <nav class='cabinet-menu__nav'>
-    <a *ngFor="let menuItem of menuItems" [routerLink]=menuItem.url class='cabinet-menu__nav-item'>
+    <div class='cabinet-menu__common-data'>
+        <img src="../../common/images/test-user-photo.png" alt="">
+        <div class='cabinet-menu__caption'>{{userData.name}} {{userData.surname}}</div>
+    </div>
+    <a *ngFor="let menuItem of menuItems" [routerLink]=menuItem.routerLink class='cabinet-menu__nav-item'>
         <img [src]="loadImg(menuItem.imageName)" alt="">
         {{menuItem.text}}
     </a>

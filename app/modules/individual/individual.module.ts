@@ -6,6 +6,7 @@ import { IndividualComponent } from '../../components/individual/individual.comp
 import { IndividualMenuComponent } from '../../components/individual/individual-menu/individual-menu.component';
 import { IndividualHeaderComponent } from '../../components/individual/individual-header/individual-header.component';
 import { IndividualContentComponent } from '../../components/individual/individual-content/individual-content.component';
+import { IndividualUserService } from '../../services/individual/individual-user.service';
 import { routerConfig } from './shared/routes'
 
 @NgModule({
@@ -22,6 +23,7 @@ import { routerConfig } from './shared/routes'
         IndividualHeaderComponent,
         IndividualContentComponent
     ],
+    providers: [IndividualUserService]
 })
 
 export class IndividualModule{ }

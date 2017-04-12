@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { individualMenuLinks } from './shared/data';
+import { IndividualUserService } from '../../../services/individual/individual-user.service';
+import { IIndividualUser } from '../../../services/individual/shared/individual-user.interface';
 declare var require: any;
 
 @Component({
@@ -8,11 +10,18 @@ declare var require: any;
     styleUrls: ['./individual-menu.component.less', '../../common/styles/cabinet-menu.less']
 })
 
-export class IndividualMenuComponent {
+export class IndividualMenuComponent{
+
+    constructor(private individualUserService: IndividualUserService){
+        this.userData = this.individualUserService.getData();
+    }
+
+    userData: IIndividualUser;
+    
     menuItems = individualMenuLinks;
 
     loadImg(image){
-        return require(`../../common/images/business-menu/${image}.png`);
+        return require(`../../common/images/cabinet-menu/${image}.png`);
     }
-    menuIcon = '../../common/images/business-menu/home-icon.png';
+
 }

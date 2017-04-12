@@ -12,7 +12,6 @@ export class BusinessMenuComponent {
     menuItems = businessMenuLinks;
 
     loadImg(image){
-        return require(`../../common/images/business-menu/${image}.png`);
+        return require(`../../common/images/cabinet-menu/${image}.png`);
     }
-    menuIcon = '../../common/images/business-menu/home-icon.png';
 }

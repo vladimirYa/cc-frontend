@@ -7,24 +7,14 @@ export let individualMenuLinks: IMenuItem[] = [
         imageName: 'home-icon'
     },
     {
-        text: 'Card Managment',
+        text: 'My ChargaCards',
         routerLink: 'card-managment',
-        imageName: 'billing-managment'
-    },
-    {
-        text: 'Billing Managment',
-        routerLink: 'billing-managment',
-        imageName: 'billing-managment'
-    },
-    {
-        text: 'Customers',
-        routerLink: 'customers',
-        imageName: 'billing-managment'
+        imageName: 'card'
     },
     {
         text: 'Settings',
         routerLink: 'settings',
-        imageName: 'billing-managment'
-    },
+        imageName: 'settings'
+    }
 
 ];

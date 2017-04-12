@@ -9,7 +9,7 @@ export let businessMenuLinks: IMenuItem[] = [
     {
         text: 'Card Managment',
         routerLink: 'card-managment',
-        imageName: 'billing-managment'
+        imageName: 'card'
     },
     {
         text: 'Billing Managment',
@@ -19,12 +19,12 @@ export let businessMenuLinks: IMenuItem[] = [
     {
         text: 'Customers',
         routerLink: 'customers',
-        imageName: 'billing-managment'
+        imageName: 'customers'
     },
     {
         text: 'Settings',
         routerLink: 'settings',
-        imageName: 'billing-managment'
+        imageName: 'settings'
     },
 
 ];

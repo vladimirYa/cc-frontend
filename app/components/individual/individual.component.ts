@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class IndividualComponent {
-    title = 'Individual bitch!'
+    title = 'Individual bitch!';
 }
